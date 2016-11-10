@@ -1,0 +1,17 @@
+{
+    "name": "phpredeye/phpfox-i18n",
+    "description": "PhpFox International Component",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Nam Nguyen",
+            "email": "nam.ngvan@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Phpfox\\I18n\\": "src/"
+        }
+    },
+    "require": {}
+}
