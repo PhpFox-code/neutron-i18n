@@ -32,8 +32,8 @@ class Translator implements TranslatorInterface
         $locale = $locale ?: $this->locale;
 
         $message = (isset($this->messages[$domain])
-            ?: $this->messages[$domain] = new TextDomain($locale))->textPlural($locale,
-            $message, 0);
+            ?: $this->messages[$domain]
+                = new TextDomain($locale))->textPlural($locale, $message, 0);
 
         if (!$data) {
             return $message;
@@ -56,8 +56,9 @@ class Translator implements TranslatorInterface
         $locale = $locale ?: $this->locale;
 
         $message = (isset($this->messages[$domain])
-            ?: $this->messages[$domain] = new TextDomain($locale))->textPlural($locale,
-            $message, $number);
+            ?: $this->messages[$domain]
+                = new TextDomain($locale))->textPlural($locale, $message,
+            $number);
 
         if (!$data) {
             return $message;
@@ -66,6 +67,13 @@ class Translator implements TranslatorInterface
         return _sprintf($message, $data);
     }
 
+    /**
+     * @inheritdoc
+     */
+    public function getLocale()
+    {
+        return $this->locale;
+    }
 
     /**
      * @inheritdoc
@@ -74,13 +82,5 @@ class Translator implements TranslatorInterface
     {
         $this->locale = $locale;
         return $this;
-    }
-
-    /**
-     * @inheritdoc
-     */
-    public function getLocale()
-    {
-        return $this->locale;
     }
 }

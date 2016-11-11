@@ -24,7 +24,7 @@ class TextDomain implements TextDomainInterface
      */
     public function textPlural($domain, $message, $number = 0)
     {
-        
+
     }
 
     public function text($domain, $message)
