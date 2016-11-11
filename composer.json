@@ -2,6 +2,7 @@
   "name": "codelego/phpfox-i18n",
   "description": "PhpFox International Component",
   "type": "library",
+  "license": "MIT",
   "authors": [
     {
       "name": "Nam Nguyen",
