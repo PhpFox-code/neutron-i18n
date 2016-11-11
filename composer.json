@@ -1,6 +1,6 @@
 {
   "name": "codelego/phpfox-i18n",
-  "description": "PhpFox International Component",
+  "description": "I18n library for phpfox framework.",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -15,5 +15,9 @@
       "Phpfox\\I18n\\": "src/"
     }
   },
-  "require": {}
+  "autoload-dev": {
+    "psr-4": {
+      "Phpfox\\I18n\\": "test/"
+    }
+  }
 }
