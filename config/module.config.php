@@ -3,7 +3,7 @@
 namespace Phpfox\I18n;
 
 return [
-    'factories' => [
-        'translator' => TranslatorFactory::class,
+    'services' => [
+        'translator' => Translator::class,
     ],
 ];
