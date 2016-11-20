@@ -4,6 +4,8 @@ namespace Phpfox\I18n;
 
 return [
     'services' => [
-        'translator' => Translator::class,
+        'map' => [
+            'translator' => [null, Translator::class,],
+        ],
     ],
 ];
