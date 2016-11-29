@@ -1,6 +1,6 @@
 <?php
 
-namespace Phpfox\I18n;
+namespace Neutron\I18n;
 
 
 interface TextDomainInterface

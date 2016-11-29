@@ -1,11 +1,11 @@
 <?php
 
-namespace Phpfox\I18n;
+namespace Neutron\I18n;
 
 /**
  * Class TextDomain
  *
- * @package Phpfox\I18n
+ * @package Neutron\I18n
  */
 class TextDomain implements TextDomainInterface
 {

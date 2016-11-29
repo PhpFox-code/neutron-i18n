@@ -1,5 +1,5 @@
 <?php
-namespace Phpfox\I18n;
+namespace Neutron\I18n;
 
 
 class Translator implements TranslatorInterface
